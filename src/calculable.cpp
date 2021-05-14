@@ -119,7 +119,7 @@ std::deque<std::shared_ptr<Calculable>> toPostfix(const std::deque<Token>& token
       }
       case PLUS:
       case MUL:
-      case DIV: 
+      case DIV:
       {
 		++tokenIterator;
         std::shared_ptr<Calculable> operation = createBinaryOperation(token);
